@@ -10,7 +10,7 @@ public class View {
 	Scanner ent = new Scanner(System.in);
 	
 		public static void imprimiFaturamentoMensal(double taxa, double dataCriacao){
-		System.out.println("Seu investimento é de 0,43% ao mes, dentro de 30 dias: "+taxa*dataCriacao);
+		System.out.println("Seu investimento é de 0,43% ao mes, dentro de 30 dias: "+dataCriacao*taxa/100);
 	}
 			public void imprimirDeposito(int deposito, int reaDeposito){
 				System.out.println("Conta de deposito: "+deposito+" Valor de deposito: "+reaDeposito);
@@ -34,8 +34,7 @@ public class View {
 		}
 
 		public void SaldoDisponivel(double saldo){
-			System.out.println("saldo de:" +saldo);
-			//JOptionPane.showMessageDialog(null,"Saldo de: "+saldo);
+			System.out.println("saldo de: " +saldo);
 		}	
 		
 		public int realizaDeposito(){

@@ -42,16 +42,21 @@ public class ControllerEspecial {
 			System.out.println(msg);
 			char op = e.nextLine().charAt(0);
 			if (op == '1') {
-				vi.digiteConta();vi.imprimirConta(c.conta);
+				//vi.digiteConta();
+				c.setConta(vi.digiteConta());
+				vi.imprimirConta(c.conta);
 			}
 			if (op == '2') {
-				vi.realizaDeposito();vi.contaRealizaDeposito();vi.imprimirDeposito(c.depositar,c.reaDeposito);
+				c.setReaDeposito(vi.realizaDeposito());
+				c.setDepositar(vi.contaRealizaDeposito());
+				vi.imprimirDeposito(c.depositar,c.reaDeposito);
 			}
 			if (op == '3') {
 				vi.SaldoDisponivel(c.saldo);
 			}
 			if (op == '4') {
-				vi.digiteConta();vi.recebeValorCaixaEletronico2();
+				c.setConta(vi.digiteConta());
+				vi.recebeValorCaixaEletronico2();
 				
 				int i=0;
 				if (s.verificaLimiteMax() && s.verificaLimiteMin()){
@@ -63,7 +68,8 @@ public class ControllerEspecial {
 				
 		}
 			if (op == '5') {
-				vi.dataInvestimento();View.imprimiFaturamentoMensal(inv.taxa,inv.dataCriacao);
+				inv.setDataCriacao(vi.dataInvestimento());
+				View.imprimiFaturamentoMensal(inv.taxa,inv.dataCriacao);
 			}
 			if (op == '6') {
 				System.exit(op);
