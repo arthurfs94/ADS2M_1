@@ -1,20 +1,14 @@
 package com.senac.pessoa;
-import java.util.Random;
+  
+public class View {  
+	//Print da tela.
+	public void imprimirContato(String nome,String sobrenome,String endereco, String telefoneTipo, String telefoneNumero){
+		
+		System.out.println("Nome: "+nome+" Sobrenome: "+sobrenome+" Endereco: "+endereco+" Tipo: "+telefoneNumero+" Telefone: "+telefoneTipo);
+		
+	}
 
-public class View {
 	
-	public static void main(String args []){
-		
-		Random p = new Random();
-		int a;
-		
-		for(int i=0; i<=10; i++);{
-			a = p.nextInt(50);
-			System.out.println(a + " ");
-			
-			
-			}
-			
-		}
-
-}
+    	
+       
+	}
