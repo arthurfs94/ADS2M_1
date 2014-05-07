@@ -28,6 +28,11 @@ public class testTest {
 		Comandos comd = new Comandos();
 		assertTrue(comd.tanque == 6);
 	}
+	@Test
+	public void testAndarUmaCasa() {
+		Comandos comd = new Comandos();
+		assertTrue(comd.AndarUmaCasa());
+	}
 
 
 

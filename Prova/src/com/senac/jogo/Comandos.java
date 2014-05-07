@@ -12,8 +12,13 @@ public class Comandos {
 	public void Posicao() {
 		posicao = 0;
 	}
-	public void tanque() {
+	public void Tanque() {
 		tanque = 6;
 	}
-
+	public boolean AndarUmaCasa() {
+		posicao = 1;
+		return false;
+	}
+	
+	
 }
