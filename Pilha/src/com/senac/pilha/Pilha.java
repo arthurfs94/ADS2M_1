@@ -5,23 +5,23 @@ public class Pilha {
 	public Object[] vetor;
 	public int ponteiro; // tamanho da pilha.
 	
-	public pilha() {
+	public Pilha() {
 		this.ponteiro=-1; //pilha vazia.
 		this.vetor=new Object[100]; //100 posicoes
 	}
 	public static void main(String[] args) {
 		//estanciar pilha e atribuir valores a ela.
 		Pilha pilha = new Pilha();
-		pilha.push("P");
-		pilha.push("A");
-		pilha.push("L");
-		pilha.push("ê");
-		pilha.push("N");
-		pilha.push("D");
-		pilha.push("R");
 		pilha.push("O");
 		pilha.push("M");
 		pilha.push("O");
+		pilha.push("R");
+		pilha.push("D");
+		pilha.push("N");
+		pilha.push("I");
+		pilha.push("L");
+		pilha.push("A");
+		pilha.push("P");
 		
 		//enquanto a pilha nao estiver vazia.
 		while(pilha.isEmpty()== false){
