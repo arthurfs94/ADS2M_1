@@ -38,7 +38,11 @@ public class testTest {
 		Comandos comd = new Comandos();
 		assertTrue(comd.ReduzirUmaCasa());
 	}
-
+	@Test
+	public void testReduzirTanque() {
+		Comandos comd = new Comandos();
+		assertTrue(comd.ReduzirTanque());
+	}
 
 
 }

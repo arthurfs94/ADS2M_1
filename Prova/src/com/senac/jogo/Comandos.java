@@ -23,6 +23,10 @@ public class Comandos {
 		posicao --;
 		return false;
 	}
+	public boolean ReduzirTanque() {
+		tanque --;
+		return false;
+	}
 	
 	
 }
