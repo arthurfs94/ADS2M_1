@@ -16,7 +16,11 @@ public class Comandos {
 		tanque = 6;
 	}
 	public boolean AndarUmaCasa() {
-		posicao = 1;
+		posicao++;
+		return false;
+	}
+	public boolean ReduzirUmaCasa() {
+		posicao --;
 		return false;
 	}
 	

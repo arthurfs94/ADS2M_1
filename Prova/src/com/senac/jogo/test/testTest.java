@@ -33,6 +33,11 @@ public class testTest {
 		Comandos comd = new Comandos();
 		assertTrue(comd.AndarUmaCasa());
 	}
+	@Test
+	public void testReduzirUmaCasa() {
+		Comandos comd = new Comandos();
+		assertTrue(comd.ReduzirUmaCasa());
+	}
 
 
 
