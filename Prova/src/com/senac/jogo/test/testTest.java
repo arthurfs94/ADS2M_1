@@ -43,6 +43,16 @@ public class testTest {
 		Comandos comd = new Comandos();
 		assertTrue(comd.ReduzirTanque());
 	}
-
+	@Test
+	public void testCarregarTanque() {
+		Comandos comd = new Comandos();
+		assertTrue(comd.CarregarTanque());
+	}
+	@Test
+	public void testCarregarTanqueApenasNaCasaInicial() {
+		Comandos comd = new Comandos();
+		assertTrue(comd.CarregarTanqueApenasNaCasaInicial());
+	}
+	
 
 }

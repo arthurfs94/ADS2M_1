@@ -27,6 +27,14 @@ public class Comandos {
 		tanque --;
 		return false;
 	}
+	public boolean CarregarTanque() {
+		tanque = 6;
+		return false;
+	}
+	public boolean CarregarTanqueApenasNaCasaInicial() {
+		if (posicao != 0);
+		return false;
+	}
 	
 	
 }
