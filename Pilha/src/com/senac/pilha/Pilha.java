@@ -15,7 +15,7 @@ public class Pilha {
 		pilha.push("O");
 		pilha.push("M");
 		pilha.push("O");
-		pilha.mostraPalindromo(verificarPalindromo(pilha));
+		pilha.mostrarPalindromo(verificarPalindromo(pilha));
 		
 		//enquanto a pilha nao estiver vazia.
 		while(pilha.isEmpty()== false){
@@ -24,16 +24,14 @@ public class Pilha {
 		}
 	}
 	public void imprimePalindromo(boolean b){
-		System.out.println("Tarefa 3:\n----------\n");
 		if(b){
-			System.out.println("è palindromo");
+			System.out.println("é palindromo");
 		}else{
 			System.out.println("não é palindromo");
 		}
-		System.out.println("\n----------\n");
 	}
 	
-	public void mostraPalindromo(boolean p){
+	public void mostrarPalindromo(boolean p){
 		imprimePalindromo(p);		
 		System.out.println("\n");
 	}
@@ -62,12 +60,10 @@ public class Pilha {
 		return status;
 	}
 	
-	
 	public int getPonteiro() {
 		return ponteiro;
 	}
 
-	
 	public boolean isEmpty() { //verifica pilha esta vazia.
 		if(this.ponteiro==-1){
 			return true;
