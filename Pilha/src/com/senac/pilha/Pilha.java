@@ -15,13 +15,7 @@ public class Pilha {
 		pilha.push("O");
 		pilha.push("M");
 		pilha.push("O");
-		pilha.push("R");
-		pilha.push("D");
-		pilha.push("N");
-		pilha.push("I");
-		pilha.push("L");
-		pilha.push("A");
-		pilha.push("P");
+		pilha.mostraPalindromo(verificarPalindromo(pilha));
 		
 		//enquanto a pilha nao estiver vazia.
 		while(pilha.isEmpty()== false){
@@ -29,6 +23,50 @@ public class Pilha {
 			
 		}
 	}
+	public void imprimePalindromo(boolean b){
+		System.out.println("Tarefa 3:\n----------\n");
+		if(b){
+			System.out.println("è palindromo");
+		}else{
+			System.out.println("não é palindromo");
+		}
+		System.out.println("\n----------\n");
+	}
+	
+	public void mostraPalindromo(boolean p){
+		imprimePalindromo(p);		
+		System.out.println("\n");
+	}
+	public static boolean verificarPalindromo(Pilha p) {
+		boolean status=false;
+		int indice=0;
+		char[] vetorDesempilhados=new char[p.getPonteiro()+2];
+		
+		while(!p.isEmpty()){		
+			vetorDesempilhados[indice]=p.pop().toString().toCharArray()[0];
+			indice++;
+		}
+		
+		int a=vetorDesempilhados.length-2;
+		
+		for(int i=0;i<vetorDesempilhados.length-1;i++){
+			if(vetorDesempilhados[i]==vetorDesempilhados[a]){		;			
+			status=true;
+			}else{
+				status=false;
+				break;
+			}
+			a--;			
+		}		
+		
+		return status;
+	}
+	
+	
+	public int getPonteiro() {
+		return ponteiro;
+	}
+
 	
 	public boolean isEmpty() { //verifica pilha esta vazia.
 		if(this.ponteiro==-1){
@@ -52,7 +90,6 @@ public class Pilha {
 	}
 	public void push(Object valor) { // empilhar.
 		if(this.ponteiro < this.vetor.length-1){
-			
 			this.vetor[++ponteiro]=valor;
 		}
 	}
